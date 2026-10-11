@@ -1,0 +1,50 @@
+@startuml
+hide circle
+
+class "Бухгалтер" as Actor
+class "Кошторис" as Aggregate
+class "Транзакція" as Part
+
+Actor "1" --> "*" Aggregate : звернутися до кошторису
+note on link
+  Bash: cd
+end note
+
+Actor "1" --> "*" Aggregate : сформувати кошторис
+note on link
+  Bash: mkdir
+end note
+
+Actor "1" --> "*" Aggregate : звірити кошторис
+note on link
+  Bash: ls
+end note
+
+Actor "1" --> "*" Aggregate : затвердити кошторис
+note on link
+  Bash: немає
+end note
+
+Actor "1" --> "*" Part : провести транзакцію
+note on link
+  Bash: touch
+end note
+
+Actor "1" --> "*" Part : вивчити транзакцію
+note on link
+  Bash: cat
+end note
+
+Actor "1" --> "*" Part : перенести транзакцію
+note on link
+  Bash: mv
+end note
+
+Actor "1" --> "*" Part : завірити транзакцію
+note on link
+  Bash: немає
+end note
+
+Aggregate "1" o-- "*" Part
+
+@enduml
