@@ -53,12 +53,14 @@
 У файлі Finansy\_aliases.sh створено псевдоніми для шести дій, що мають відповідники. Для "затвердити кошторис" і "завірити транзакцію" псевдоніми не створюються.
 
 Використання:
-source Finansy\_aliases.sh
-sformuvaty Kostorys\_Q4     # mkdir
-zvernutysya Kostorys\_Q4    # cd
+```
+source Finansy_aliases.sh
+sformuvaty Kostorys_Q4     # mkdir
+zvernutysya Kostorys_Q4    # cd
 provesty tx001.txt         # touch
 vyvchyty tx001.txt         # cat
 zviryty                    # ls
-perenesty tx001.txt ../Kostorys\_Q1/   # mv
+perenesty tx001.txt ../Kostorys_Q1/   # mv
+```
 
 
